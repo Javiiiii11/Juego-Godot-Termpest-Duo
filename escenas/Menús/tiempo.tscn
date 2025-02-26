@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://cem311r6n2eeq"]
+
+[ext_resource type="Texture2D" uid="uid://c2ioslfkhn2p4" path="res://imagenes/Menus/clock.png" id="1_4p1pt"]
+
+[node name="tiempo" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("1_4p1pt")

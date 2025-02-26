@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://mm8nq8mq6nd4"]
+
+[ext_resource type="Script" path="res://escenas/Musica/musica.gd" id="1_xkxfo"]
+
+[node name="Musica" type="Node"]
+script = ExtResource("1_xkxfo")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+autoplay = true

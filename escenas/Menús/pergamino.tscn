@@ -1,0 +1,75 @@
+[gd_scene load_steps=10 format=3 uid="uid://bysdu10d4lye2"]
+
+[ext_resource type="Texture2D" uid="uid://c8hsowdcl460a" path="res://imagenes/Mapa/pergamino.png" id="1_5uh3u"]
+[ext_resource type="Texture2D" uid="uid://ts1tb5nnusw1" path="res://imagenes/Menus/Level/Star/Group/0-3.png" id="2_wke76"]
+[ext_resource type="FontFile" uid="uid://bpnnu16ub36e0" path="res://fuentes/PixelOperator8-Bold.ttf" id="3_0dn5m"]
+[ext_resource type="Texture2D" uid="uid://bbsntidrj1wdn" path="res://imagenes/Menus/Buttons/Rect/PlayIcon/Hover.png" id="4_aicpo"]
+[ext_resource type="Texture2D" uid="uid://ic167xpalwfc" path="res://imagenes/Menus/Buttons/Rect/PlayIcon/Default.png" id="5_jpdcb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8cunc"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vmwci"]
+texture = ExtResource("4_aicpo")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0imyr"]
+texture = ExtResource("5_jpdcb")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ganw1"]
+texture = ExtResource("5_jpdcb")
+
+[node name="Pergamino" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(576, 320)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_5uh3u")
+
+[node name="estrellas" type="Sprite2D" parent="."]
+position = Vector2(576, 232)
+scale = Vector2(2, 2)
+texture = ExtResource("2_wke76")
+
+[node name="ganador" type="Label" parent="."]
+offset_left = 384.0
+offset_top = 262.0
+offset_right = 768.0
+offset_bottom = 302.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_0dn5m")
+theme_override_font_sizes/font_size = 21
+text = "Ganador:"
+metadata/_edit_use_anchors_ = true
+
+[node name="puntuacion1" type="Label" parent="."]
+offset_left = 416.0
+offset_top = 318.0
+offset_right = 736.0
+offset_bottom = 350.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_0dn5m")
+theme_override_font_sizes/font_size = 15
+text = "Puntuacion J1: "
+metadata/_edit_use_anchors_ = true
+
+[node name="puntuacion2" type="Label" parent="."]
+offset_left = 416.0
+offset_top = 358.0
+offset_right = 736.0
+offset_bottom = 390.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_0dn5m")
+theme_override_font_sizes/font_size = 15
+text = "Puntuacion J2: "
+metadata/_edit_use_anchors_ = true
+
+[node name="continuar" type="Button" parent="."]
+offset_left = 536.0
+offset_top = 392.0
+offset_right = 696.0
+offset_bottom = 468.0
+scale = Vector2(0.5, 0.5)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8cunc")
+theme_override_styles/hover = SubResource("StyleBoxTexture_vmwci")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_0imyr")
+theme_override_styles/normal = SubResource("StyleBoxTexture_ganw1")
+metadata/_edit_use_anchors_ = true

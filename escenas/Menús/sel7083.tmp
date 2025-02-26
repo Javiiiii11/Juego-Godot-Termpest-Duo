@@ -1,0 +1,201 @@
+[gd_scene load_steps=18 format=3 uid="uid://c8kgddyt3e026"]
+
+[ext_resource type="Script" path="res://escenas/Menús/seleccion_del_personje.gd" id="1_37hgq"]
+[ext_resource type="FontFile" uid="uid://b0ybjlgngkvco" path="res://fuentes/wayfarers-toy-box.ttf" id="2_aqm7r"]
+[ext_resource type="Texture2D" uid="uid://bvbtsfkshh81q" path="res://imagenes/Menus/Hover.png" id="4_m7vgo"]
+[ext_resource type="Texture2D" uid="uid://bj2vdso4jsyog" path="res://imagenes/Menus/Default.png" id="5_ef2cs"]
+[ext_resource type="Texture2D" uid="uid://exrvmyun2xud" path="res://imagenes/Personaje 2/outfit/playerRedIcon.png" id="7_r6kfa"]
+[ext_resource type="Texture2D" uid="uid://ck07x8qipmsi0" path="res://imagenes/Personaje 2/outfit/playerOrangeIcon.png" id="8_3ticg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hqia5"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_onokm"]
+texture = ExtResource("4_m7vgo")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5kjrx"]
+texture = ExtResource("5_ef2cs")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5eeuj"]
+texture = ExtResource("5_ef2cs")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_chjnm"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7xgs1"]
+texture = ExtResource("4_m7vgo")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uttee"]
+texture = ExtResource("5_ef2cs")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4ktbh"]
+texture = ExtResource("5_ef2cs")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j8cxv"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0hu1e"]
+texture = ExtResource("4_m7vgo")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lmj7i"]
+texture = ExtResource("5_ef2cs")
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_37hgq")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.212305, 0.212305, 0.212305, 1)
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Label1" type="Label" parent="."]
+offset_left = 139.5
+offset_top = 153.0
+offset_right = 473.5
+offset_bottom = 188.0
+theme_override_fonts/font = ExtResource("2_aqm7r")
+theme_override_font_sizes/font_size = 30
+text = "Jugador 1"
+
+[node name="izq1" type="Button" parent="."]
+anchors_preset = -1
+anchor_right = 0.007
+offset_left = 112.5
+offset_top = 335.0
+offset_right = 184.436
+offset_bottom = 414.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_aqm7r")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxEmpty_hqia5")
+theme_override_styles/hover = SubResource("StyleBoxTexture_onokm")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_5kjrx")
+theme_override_styles/normal = SubResource("StyleBoxTexture_5eeuj")
+text = "<"
+
+[node name="dere1" type="Button" parent="."]
+anchors_preset = -1
+anchor_right = 0.007
+offset_left = 425.5
+offset_top = 335.0
+offset_right = 497.436
+offset_bottom = 414.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_aqm7r")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxEmpty_chjnm")
+theme_override_styles/hover = SubResource("StyleBoxTexture_7xgs1")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_uttee")
+theme_override_styles/normal = SubResource("StyleBoxTexture_4ktbh")
+text = ">"
+
+[node name="ok1" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -315.468
+offset_top = 99.5
+offset_right = -221.532
+offset_bottom = 194.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_aqm7r")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxEmpty_j8cxv")
+theme_override_styles/hover = SubResource("StyleBoxTexture_0hu1e")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_lmj7i")
+theme_override_styles/normal = SubResource("StyleBoxTexture_5eeuj")
+text = "Ok"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(310.5, 356)
+scale = Vector2(3.5, 3.577)
+texture = ExtResource("7_r6kfa")
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 663.5
+offset_top = 153.0
+offset_right = 997.5
+offset_bottom = 188.0
+theme_override_fonts/font = ExtResource("2_aqm7r")
+theme_override_font_sizes/font_size = 30
+text = "Jugador 2"
+
+[node name="izq2" type="Button" parent="."]
+anchors_preset = -1
+anchor_right = 0.007
+offset_left = 636.5
+offset_top = 335.0
+offset_right = 708.436
+offset_bottom = 414.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_aqm7r")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxEmpty_hqia5")
+theme_override_styles/hover = SubResource("StyleBoxTexture_onokm")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_5kjrx")
+theme_override_styles/normal = SubResource("StyleBoxTexture_5eeuj")
+text = "<"
+
+[node name="dere2" type="Button" parent="."]
+anchors_preset = -1
+anchor_right = 0.007
+offset_left = 949.5
+offset_top = 335.0
+offset_right = 1021.44
+offset_bottom = 414.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_aqm7r")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxEmpty_chjnm")
+theme_override_styles/hover = SubResource("StyleBoxTexture_7xgs1")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_uttee")
+theme_override_styles/normal = SubResource("StyleBoxTexture_4ktbh")
+text = ">"
+
+[node name="ok2" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 208.532
+offset_top = 99.5
+offset_right = 302.468
+offset_bottom = 194.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_aqm7r")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxEmpty_j8cxv")
+theme_override_styles/hover = SubResource("StyleBoxTexture_0hu1e")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_lmj7i")
+theme_override_styles/normal = SubResource("StyleBoxTexture_5eeuj")
+text = "Ok"
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(834.5, 356)
+scale = Vector2(3.5, 3.577)
+texture = ExtResource("8_3ticg")
+
+[connection signal="pressed" from="izq1" to="." method="_on_izq_1_pressed"]
+[connection signal="pressed" from="dere1" to="." method="_on_dere_1_pressed"]
+[connection signal="pressed" from="ok1" to="." method="_on_ok_1_pressed"]
+[connection signal="pressed" from="izq2" to="." method="_on_izq_2_pressed"]
+[connection signal="pressed" from="dere2" to="." method="_on_dere_2_pressed"]
+[connection signal="pressed" from="ok2" to="." method="_on_ok_2_pressed"]
