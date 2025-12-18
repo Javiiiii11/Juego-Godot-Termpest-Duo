@@ -9,6 +9,7 @@ Tiene 2 mapas:
 
 El juego esta inspirado en 2 personajes que se quedan atrapados en una cueva y tienen que coger 3 diamantes repartidos por el mapa para desbloquear el portal de salida.
 Esta creado para hacer carreras entre los jugadore 1 y 2 e intentar pasarselo antes que el otro jugador.
+
 Pantalla inicial:
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b8e02178-7b77-4cb1-9762-ae30a7cdab4b" />
 
